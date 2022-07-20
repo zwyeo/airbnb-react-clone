@@ -20,7 +20,7 @@ function Header() {
        cursor-pointer my-auto"
       >
         <Image
-          src="https:links.papareact.com/qd3"
+          src="https://links.papareact.com/qd3"
           alt="airbnb logo"
           layout="fill"
           objectFit="contain"
