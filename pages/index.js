@@ -46,9 +46,8 @@ const Home = ({ exploreData, cardData }) => {
           description="Wishlists curated by Airbnb"
           buttonText="Get Inspired"
         />
-
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };
