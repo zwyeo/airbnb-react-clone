@@ -21,6 +21,7 @@ function Header() {
       >
         <Image
           src="https:links.papareact.com/qd3"
+          alt="City icon"
           layout="fill"
           objectFit="contain"
           objectPosition="left"
