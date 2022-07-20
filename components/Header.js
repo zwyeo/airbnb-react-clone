@@ -21,7 +21,7 @@ function Header() {
       >
         <Image
           src="https:links.papareact.com/qd3"
-          alt="City icon"
+          alt="airbnb logo"
           layout="fill"
           objectFit="contain"
           objectPosition="left"
