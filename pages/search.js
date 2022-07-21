@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
+import Mapbox from "../components/Mapbox";
 
 function Search({ searchResults }) {
   const router = useRouter();
@@ -13,13 +14,12 @@ function Search({ searchResults }) {
   const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
   const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
-  console.log(searchResults);
 
   return (
     <div>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} pax`} />
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
+        <section className="flex-grow pt-14 px-6 max-w-5xl">
           <p className="text-xs">
             300+ Stays - {range} - for {noOfGuests} guests
           </p>
@@ -51,6 +51,10 @@ function Search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+
+        <section className="hidden xl:inline-flex xl:min-w[600px] xl:flex-grow">
+          <Mapbox searchResults={searchResults} />
         </section>
       </main>
 
